@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 // This import brings in the API calls
 import { FetchApiDataService } from '../fetch-api-data.service';
@@ -18,8 +18,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./login-user-form.component.scss'],
 })
 export class LoginUserFormComponent implements OnInit {
-  @Input() userDate = { username: "":, password: "" };
-
+  @Input() userDate = { username: "", password: "" };
 
   constructor(
     public fetchApiData: FetchApiDataService,
