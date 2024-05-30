@@ -23,7 +23,7 @@ import { MovieCardComponent } from './movie-card/movie-card.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
-  //{ path: 'movies', component: MovieCardComponent },
+  { path: 'movies', component: MovieCardComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
 @NgModule({
