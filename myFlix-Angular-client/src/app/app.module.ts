@@ -20,6 +20,7 @@ import { LoginUserFormComponent } from './login-user-form/login-user-form.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
+import { SynopsisComponent } from './synopsis/synopsis.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
     LoginUserFormComponent,
     WelcomePageComponent,
     MovieCardComponent,
+    SynopsisComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

@@ -7,8 +7,9 @@ import {
 } from '../fetch-api-data.service';
 
 import { MatDialog } from '@angular/material/dialog';
-import { DirectorInfoComponent } from '../director-info/director-info.component';
+//import { DirectorInfoComponent } from '../director-info/director-info.component';
 import { SynopsisComponent } from '../synopsis/synopsis.component';
+
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
