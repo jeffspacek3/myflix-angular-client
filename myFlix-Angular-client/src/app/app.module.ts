@@ -21,6 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 import { SynopsisComponent } from './synopsis/synopsis.component';
+import { ProfileComponent } from './profile/profile.component';
+import { DirectorInfoComponent } from './director-info/director-info.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
@@ -35,6 +37,8 @@ const appRoutes: Routes = [
     WelcomePageComponent,
     MovieCardComponent,
     SynopsisComponent,
+    ProfileComponent,
+    DirectorInfoComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

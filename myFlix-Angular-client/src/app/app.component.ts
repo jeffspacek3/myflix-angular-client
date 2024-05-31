@@ -3,6 +3,7 @@ import { UserRegistrationFormComponent } from './user-registration-form/user-reg
 import { LoginUserFormComponent } from './login-user-form/login-user-form.component';
 import { MatDialog } from '@angular/material/dialog';
 import { MovieCardComponent } from './movie-card/movie-card.component';
+import { ProfilePageComponent } from './profile/profile.component';
 
 @Component({
   selector: 'app-root',
