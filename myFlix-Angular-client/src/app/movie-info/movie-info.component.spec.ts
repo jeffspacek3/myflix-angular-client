@@ -23,3 +23,5 @@ describe('MovieInfoComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+

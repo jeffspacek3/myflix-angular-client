@@ -19,7 +19,6 @@ import { UserRegistrationFormComponent } from './user-registration-form/user-reg
 import { LoginUserFormComponent } from './login-user-form/login-user-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
-import { MovieCardComponent } from './movie-card/movie-card.component';
 import { SynopsisComponent } from './synopsis/synopsis.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DirectorInfoComponent } from './director-info/director-info.component';
@@ -27,20 +26,17 @@ import { MovieInfoComponent } from './movie-info/movie-info.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
-  { path: 'movies', component: MovieCardComponent },
+  { path: 'movies', component: MovieInfoComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
 @NgModule({
   declarations: [
+    DirectorInfoComponent,
+    LoginUserFormComponent,
     AppComponent,
     UserRegistrationFormComponent,
-    LoginUserFormComponent,
     WelcomePageComponent,
-    MovieCardComponent,
     SynopsisComponent,
-    ProfileComponent,
-    DirectorInfoComponent,
-    MovieInfoComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

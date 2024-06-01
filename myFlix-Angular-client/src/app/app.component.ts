@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { UserRegistrationFormComponent } from './user-registration-form/user-registration-form.component';
 import { LoginUserFormComponent } from './login-user-form/login-user-form.component';
 import { MatDialog } from '@angular/material/dialog';
-import { MovieCardComponent } from './movie-card/movie-card.component';
+import { MovieInfoComponent } from './movie-info/movie-info.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FetchApiDataService } from './fetch-api-data.service';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +29,7 @@ openUserRegistrationDialog(): void {
     });
   }
   openMoviesDialog(): void {
-    this.dialog.open(MovieCardComponent, {
+    this.dialog.open(MovieInfoComponent, {
       width: '500px'
     });
   }

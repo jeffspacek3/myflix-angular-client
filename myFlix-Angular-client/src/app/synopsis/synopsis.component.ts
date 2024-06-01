@@ -13,10 +13,10 @@ export class SynopsisComponent implements OnInit {
     public dialogRef: MatDialogRef<SynopsisComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
-    this.moive = data.movie;
+    this.movie = data.movie;
   }
   closeDialog(): void {
-    this this.dialogRef.close();
+    this.dialogRef.close();
   }
 
   ngOnInit(): void {
