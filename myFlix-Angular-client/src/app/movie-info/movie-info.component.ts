@@ -9,7 +9,8 @@ import { ProfileComponent } from '../profile/profile.component';
 
 @Component({
   selector: 'app-movie-card',
-  templateUrl: './movie-info.component.html'
+  templateUrl: './movie-info.component.html',
+  styleUrls: ['./movie-info.component.scss']
 })
 export class MovieInfoComponent implements OnInit {
   movies: any[] = [];

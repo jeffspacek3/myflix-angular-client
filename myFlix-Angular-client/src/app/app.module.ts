@@ -10,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { FormsModule } from '@angular/forms';
 
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
     UserRegistrationFormComponent,
     WelcomePageComponent,
     SynopsisComponent,
+    ProfileComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -46,6 +48,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     FormsModule,
     MatDialogModule,
+    MatTabsModule,
     MatInputModule,
     MatButtonModule,
     MatCardModule,

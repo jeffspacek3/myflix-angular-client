@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { catchError } from 'rxjs/internal/operators';
 import {
   HttpClient,
   HttpHeaders,
