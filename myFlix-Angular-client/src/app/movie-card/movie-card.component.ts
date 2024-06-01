@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  AllMoviesService,
-  AddFavoriteMovieService,
-  UserListService,
-  RemoveFavoriteMovieService,
-} from '../fetch-api-data.service';
+import { FetchApiDataService } from '../fetch-api-data.service';
 
 import { MatDialog } from '@angular/material/dialog';
 //import { DirectorInfoComponent } from '../director-info/director-info.component';

@@ -4,18 +4,13 @@ import { MatDialog } from '@angular/material/dialog';
 import { DirectorInfoComponent } from '../director-info/director-info.component';
 import { SynopsisComponent } from '../synopsis/synopsis.component';
 import { Router } from '@angular/router';
-
-import {
-  AllMoviesService,
-  UserListService,
-  AddFavoriteMovieService,
-  RemoveFavoriteMovieService,
-} from '../fetch-api-data.service';
+import { FetchApiDataService } from '../fetch-api-data.service';
+import { MovieCardComponent } from '../movie-card/movie-card.component';
 
 @Component({
   selector: 'app-profile-page',
   templateUrl: './profile.component.html',
-  styleUrls: './profile.component.scss',
+  styleUrl: './profile.component.scss',
 })
 export class ProfileComponent implements OnInit {
   movies: any[] = [];
@@ -32,10 +27,9 @@ export class ProfileComponent implements OnInit {
   constructor(
     public snackBar: MatSnackBar,
     private dialog: MatDialog,
-    public fetchMovies: AllMoviesService,
-    public fetchUsers: UserListService,
-    public addFavorite: AddFavoriteMovieService,
-    public removeFavorite: RemoveFavoriteMovieService // private router: Router
+    public fetchUsers: ProfileComponent,
+    public fetchApiData: FetchApiDataService,
+    public fetchMovies: MovieCardComponent,
   ) {}
 
   /**
