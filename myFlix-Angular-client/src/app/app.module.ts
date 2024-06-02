@@ -34,11 +34,12 @@ const appRoutes: Routes = [
   declarations: [
     DirectorInfoComponent,
     LoginUserFormComponent,
-    AppComponent,
+    MovieInfoComponent,
+    ProfileComponent,
+    SynopsisComponent,
     UserRegistrationFormComponent,
     WelcomePageComponent,
-    SynopsisComponent,
-    ProfileComponent
+    AppComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

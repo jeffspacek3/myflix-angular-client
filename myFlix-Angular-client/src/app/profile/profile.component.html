@@ -1,4 +1,3 @@
-<app-toolbar></app-toolbar>
 
 <h1>
   Hello <span class="userName">{{ username }}!</span>
@@ -7,8 +6,8 @@
 <mat-tab-group>
   <mat-tab label="My list of favorite movies">
     <div class="movie-grid">
-      <ng-container *ngIf="favorites.length > 0; else noFavorites">
-        <mat-card *ngFor="let movie of favorites; let i = index">
+      <ng-container *ngif="favorites.length > 0; else noFavorites">
+        <mat-card *ngfor="let movie of favorites; let i = index">
           <mat-dialog-content>
             <mat-card-header>
               <mat-card-title>{{ movie.Title }}</mat-card-title>
@@ -50,7 +49,7 @@
           </mat-dialog-content>
         </mat-card>
       </ng-container>
-      <ng-template #noFavorites>
+      <ng-template #nofavorites>
         <p class="no-favorites-message">
           Ups, you don't have any favorite movies. Go ahead and add some!
         </p>
@@ -58,6 +57,5 @@
     </div>
   </mat-tab>
   <mat-tab label="Update my profile">
-    <app-update-user-form></app-update-user-form>
   </mat-tab>
 </mat-tab-group>
