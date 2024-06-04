@@ -17,8 +17,6 @@ export class MovieInfoComponent implements OnInit {
   users: any[] = [];
   favorites: any[] = [];
   constructor(
-    public fetchMovies: MovieInfoComponent,
-    public fetchUsers: ProfileComponent,
     public snackBar: MatSnackBar,
     public fetchApiData: FetchApiDataService,
     private dialog: MatDialog
