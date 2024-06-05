@@ -18,14 +18,13 @@ export class LoginUserFormComponent implements OnInit {
     public dialogRef: MatDialogRef<UserRegistrationFormComponent>,
     public snackBar: MatSnackBar,
     public router: Router
-  ) {
-  }
+  ) {}
 
   ngOnInit(): void {}
 
-  
   loginUser(): void {
-    this.fetchApiData.userLogin(this.userData).subscribe(result => {
+    this.fetchApiData.userLogin(this.userData).subscribe(
+      (result) => {
         console.log(result);
         localStorage.setItem('user', result.user.Username);
         localStorage.SetItem('token', result.token);
